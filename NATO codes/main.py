@@ -1,19 +1,35 @@
 import pandas
-student_data_frame = pandas.read_csv("nato_phonetic_alphabet.csv")
+import tkinter as tk
 
 
-# Keyword Method with iterrows()
+student_data_frame = pandas.read_csv("./NATO codes/nato_phonetic_alphabet.csv")
 
-# {new_key:new_value for (index, row) in df.iterrows()}
 
-#TODO 1. Create a dictionary in this format:
+
 NATO = {row.letter: row.code for (index, row) in student_data_frame.iterrows()}
 
 
-#TODO 2. Create a list of the phonetic code words from a word that the user inputs.
-user = input("Enter a word to get phonetic: ").upper()
+# user = input("Enter a word to get phonetic: ").upper()
 
-code = [ NATO[code] for code in user]
-print(f"\n{code}")
+# code = [ NATO[code] for code in user]
+# print(f"\n{code}")
+def List():
+    code = [NATO[letter] for letter in entry.get().upper() if letter in NATO]
+    for i in range(len(code)-1):
+        tk.Label(window, text=code[i]).pack()
+
+window = tk.Tk()
+window.minsize(300,300)
+
+label = tk.Label(window, text="Enter a word to get phonetic: ").pack()
+entry = tk.Entry(window)
+entry.pack()
+
+button = tk.Button(window, text="Get List", command=List)
+button.pack()
 
 
+
+
+
+window.mainloop()
