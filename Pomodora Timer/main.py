@@ -100,8 +100,4 @@ reset_button = Button(window, text="Reset",bg=NEW,activebackground=NEW,command=r
 check_mark = Label(window, text="",bg=YELLOW, fg=GREEN)
 check_mark.grid(row=4,column=1)
 
-
-
-
-
 window.mainloop()

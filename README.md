@@ -1,5 +1,15 @@
 # Project Descriptions
 
+## Password Generator GUI
+
+This application provides a graphical user interface for generating secure, random passwords. Users can customize the length and complexity of their passwords by selecting the number of letters, symbols, and numbers to include.
+
+### Key Features
+
+- **Customizable Length**: Choose exactly how many characters of each type you want.
+- **Secure Randomization**: Utilizes Python's `random` module to ensure unpredictable password generation.
+- **User-Friendly Interface**: Built with `tkinter` for a simple and intuitive desktop experience.
+
 ## NATO Phonetic Alphabet Converter
 
 This Python script converts a word provided by the user into a list of corresponding NATO phonetic alphabet words.
