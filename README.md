@@ -1,5 +1,7 @@
 # Project Descriptions
 
+
+
 ## Password Generator GUI
 
 This application provides a graphical user interface for generating secure, random passwords. Users can customize the length and complexity of their passwords by selecting the number of letters, symbols, and numbers to include.
@@ -31,3 +33,9 @@ A typical Pomodoro Timer application helps users implement this technique by pro
 - 25 minutes of focused work.
 - A 5-minute short break. 
 - After four work intervals, a longer break of 20 minutes is taken.
+
+## Kanya Says
+A simple graphical application that displays interesting quotes and sayings for the user.
+
+## Flash Cards
+A digital flashcard application designed to help users study, learn, and memorize new information efficiently.
