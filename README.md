@@ -39,3 +39,6 @@ A simple graphical application that displays interesting quotes and sayings for 
 
 ## Flash Cards
 A digital flashcard application designed to help users study, learn, and memorize new information efficiently.
+
+## Quiz
+A graphical True/False quiz application built using Python's `tkinter` library. It fetches questions from a question bank, displays them to the user, and keeps track of the score. The interface provides visual feedback by flashing green for correct answers and red for incorrect ones.
