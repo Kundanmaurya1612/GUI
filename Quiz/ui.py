@@ -26,10 +26,15 @@ class QuizeInterface:
 
         self.window.mainloop()
         
-    def get_next(self): 
+    def get_next(self):
         self.canvas.config(bg="white")
-        quiz_text = self.quiz.next_question()
-        self.canvas.itemconfig(self.question_text, text=quiz_text)
+        if self.quiz.still_has_questions():
+            quiz_text = self.quiz.next_question()
+            self.canvas.itemconfig(self.question_text, text=quiz_text)
+        else:
+            self.canvas.itemconfig(self.question_text, text="You have Finished the quize👏")
+            self.right.config(state="disabled")
+            self.wrong.config(state="disabled")
         
 
     def button_wrong(self):
