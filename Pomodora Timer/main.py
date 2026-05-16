@@ -26,7 +26,7 @@ def countdown(count):
 
         else:
             window.attributes('-topmost', False)
-            break_session(5)  
+            break_session(5*60)  
 
 # ---------------------------- Break MECHANISM ------------------------------- #
 def break_session(count):
@@ -44,7 +44,7 @@ def break_session(count):
         window.attributes('-topmost', True)
         status.config(text="FOCUS",fg=PINK)
         window.attributes('-topmost', False)
-        countdown(10)
+        countdown(25*60)
 
 # ---------------------------- 5 sec ------------------------------- #
 def prepare(count):
@@ -54,7 +54,7 @@ def prepare(count):
         global TIMER
         TIMER = window.after(1000, prepare, count-1)
     else:
-        countdown(10)
+        countdown(25*60)
 
 # ---------------------------- Initializer ------------------------------- #
 def start_countdown():
